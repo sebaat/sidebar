@@ -1,0 +1,319 @@
+{% load static %}
+<div class="left-sidenav in mm-show">
+    <!-- LOGO -->
+    <div class="brand active">
+        <a class="logo active">
+                    <span>
+                        <img src="{% static 'assets/images/logo-sm.png' %}" alt="logo-small" class="logo-sm">
+                    </span>
+            <span>
+                        <img src="{% static 'assets/images/logo.png' %}" alt="logo-large" class="logo-lg logo-light">
+                        <img src="{% static 'assets/images/logo-dark.png' %}" alt="logo-large"
+                             class="logo-lg logo-dark">
+                    </span>
+        </a>
+    </div>
+    <!--end logo-->
+    <div class="menu-content h-100 mm-active">
+
+        <ul class="metismenu left-sidenav-menu mm-show">
+            <li class="menu-label mt-0">Main</li>
+
+            <li class="mm-active active">
+                <a class="active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round"
+                         class="feather feather-home align-self-center menu-icon">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    <span>Dashboard</span><span class="menu-arrow"><i
+                        class="mdi mdi-chevron-right"></i></span></a>
+                <ul class="nav-second-level mm-collapse in mm-show" aria-expanded="false">
+                    <li class="nav-item active"><a class="nav-link active"><i
+                            class="ti-control-record"></i>Analytics</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Sales</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round"
+                         class="feather feather-grid align-self-center menu-icon">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    <span>Apps</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                    <li>
+                        <a><i class="ti-control-record"></i>Email <span
+                                class="menu-arrow left-has-menu"><i
+                                class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                            <li><a>Inbox</a></li>
+                            <li><a>Read Email</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Chat</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Contact List</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Calendar</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>File Manager</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Invoice</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Tasks</a></li>
+                    <li>
+                        <a><i class="ti-control-record"></i>Projects
+                            <span class="menu-arrow left-has-menu"><i
+                                    class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                            <li><a>Overview</a></li>
+                            <li><a>Projects</a></li>
+                            <li><a>Board</a></li>
+                            <li><a>Teams</a></li>
+                            <li><a>Files</a></li>
+                            <li><a>New Project</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a><i class="ti-control-record"></i>Ecommerce
+                            <span class="menu-arrow left-has-menu"><i
+                                    class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                            <li><a>Products</a></li>
+                            <li><a>Product List</a></li>
+                            <li><a>Product Detail</a></li>
+                            <li><a>Cart</a></li>
+                            <li><a>Checkout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round"
+                         class="feather feather-lock align-self-center menu-icon">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    <span>Authentication</span><span class="menu-arrow"><i
+                        class="mdi mdi-chevron-right"></i></span></a>
+                <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Log in</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Register</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Recover Password</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Lock Screen</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Error 404</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Error 500</a></li>
+                </ul>
+            </li>
+
+            <hr class="hr-dashed hr-menu">
+
+            <li class="menu-label my-2">Components &amp; Extra</li>
+
+            <li>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round"
+                         class="feather feather-box align-self-center menu-icon">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                    <span>UI Kit</span><span class="menu-arrow"><i
+                        class="mdi mdi-chevron-right"></i></span></a>
+                <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                    <li>
+                        <a><i class="ti-control-record"></i>UI Elements
+                            <span class="menu-arrow left-has-menu"><i
+                                    class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                            <li><a>Alerts</a></li>
+                            <li><a>Avatar</a></li>
+                            <li><a>Buttons</a></li>
+                            <li><a>Badges</a></li>
+                            <li><a>Cards</a></li>
+                            <li><a>Carousels</a></li>
+                            <li><a><span>Check &amp; Radio</span></a>
+                            </li>
+                            <li><a>Dropdowns</a></li>
+                            <li><a>Grids</a></li>
+                            <li><a>Images</a></li>
+                            <li><a>List</a></li>
+                            <li><a>Modals</a></li>
+                            <li><a>Navs</a></li>
+                            <li><a>Navbar</a></li>
+                            <li><a>Offcanvas <span
+                                    class="badge badge-soft-success ms-auto">New</span></a></li>
+                            <li><a>Paginations</a></li>
+                            <li><a>Popover &amp; Tooltips</a></li>
+                            <li><a>Progress</a></li>
+                            <li><a>Spinners</a></li>
+                            <li><a>Tabs &amp; Accordions</a></li>
+                            <li><a>Toasts</a></li>
+                            <li><a>Typography</a></li>
+                            <li><a>Videos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a><i class="ti-control-record"></i>Advanced UI
+                            <span class="menu-arrow left-has-menu"><i
+                                    class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                            <li><a>Animation</a></li>
+                            <li><a>Clip Board</a></li>
+                            <li><a>Highlight</a></li>
+                            <li><a>Idle Timer</a></li>
+                            <li><a>Kanban</a></li>
+                            <li><a>Lightbox</a></li>
+                            <li><a>Nestable List</a></li>
+                            <li><a>Range Slider</a></li>
+                            <li><a>Ratings</a></li>
+                            <li><a>Ribbons</a></li>
+                            <li><a>Session Timeout</a></li>
+                            <li><a>Sweet Alerts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a><i class="ti-control-record"></i>Forms <span
+                                class="menu-arrow left-has-menu"><i
+                                class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                            <li><a>Advance Elements</a></li>
+                            <li><a>Basic Elements</a></li>
+                            <li><a>Editors</a></li>
+                            <li><a>File Upload</a></li>
+                            <li><a>Repeater</a></li>
+                            <li><a>Validation</a></li>
+                            <li><a>Wizard</a></li>
+                            <li><a>X Editable</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a><i class="ti-control-record"></i>Charts <span
+                                class="menu-arrow left-has-menu"><i
+                                class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                            <li><a>Apex</a></li>
+                            <li><a>Chartjs</a></li>
+                            <li><a>Flot</a></li>
+                            <li><a>Morris</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a><i class="ti-control-record"></i>Tables <span
+                                class="menu-arrow left-has-menu"><i
+                                class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                            <li><a>Basic</a></li>
+                            <li><a>Datatables</a></li>
+                            <li><a>Editable</a></li>
+                            <li><a>Responsive</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a><i class="ti-control-record"></i>Icons <span
+                                class="menu-arrow left-has-menu"><i
+                                class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level mm-collapse" aria-expanded="false">
+
+                            <li><a>Dripicons</a></li>
+                            <li><a>Feather</a></li>
+                            <li><a>Font awesome</a></li>
+                            <li><a>Material Design</a></li>
+                            <li><a>Themify</a></li>
+                            <li><a>Typicons</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a><i class="ti-control-record"></i>Maps <span
+                                class="menu-arrow left-has-menu"><i
+                                class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                            <li><a>Google Maps</a></li>
+                            <li><a>Leaflet Maps</a></li>
+                            <li><a>Vector Maps</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a><i class="ti-control-record"></i>Email
+                            Template <span class="menu-arrow left-has-menu"><i
+                                    class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                            <li><a>Alert Email</a></li>
+                            <li><a>Basic Action Email</a></li>
+                            <li><a>Billing Email</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round"
+                         class="feather feather-layers align-self-center menu-icon">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <span>Widgets</span><span class="badge badge-soft-success menu-arrow">New</span></a>
+            </li>
+
+            <li>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round"
+                         class="feather feather-file-plus align-self-center menu-icon">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="12" y1="18" x2="12" y2="12"></line>
+                        <line x1="9" y1="15" x2="15" y2="15"></line>
+                    </svg>
+                    <span>Pages</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Profile</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Starter Page</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link"><i
+                            class="ti-control-record"></i>Treeview</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</div>
